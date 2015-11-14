@@ -4,11 +4,11 @@ void setup()
 {
   int i = 0; //Déclaration du compteur à 0
   pinMode(mode1, INPUT); //Initialisation du pin 22 en mode input
-  
+
   while (i <= 45)
   {
     pinMode(i, OUTPUT); //Initialisation des pins 0 à 21 en mode output
-    i += 1; 
+    i += 1;
   }
 }
 
@@ -53,12 +53,31 @@ void chenillard(int tempo) // Animation d'un chenillard simple
     i += 1;
   }
 }
+
+void allerRetour(int tempo)
+{
+  int i = 1;
+
+  while (i <= 21)
+  {
+    digitalWrite(i, HIGH);
+    i+= 2;
+    delay(tempo);
+  }
+  while (i >= 0)
+  {
+    digitalWrite(i, LOW);
+    i--;
+    delay(tempo);
+  }
+  delay(1000);
+}
 void loop()
 {
   if (digitalRead(mode1) == LOW)
   {
-    chenillard(20);
-    
+    allerRetour(20);
+
   }
   else if (digitalRead(mode1) == HIGH)
   {
