@@ -54,14 +54,14 @@ void chenillard(int tempo) // Animation d'un chenillard simple
   }
 }
 
-void allerRetour(int tempo)
+void allerRetour1(int tempo)
 {
   int i = 1;
 
   while (i <= 21)
   {
     digitalWrite(i, HIGH);
-    i+= 2;
+    i += 2;
     delay(tempo);
   }
   while (i >= 0)
@@ -72,15 +72,62 @@ void allerRetour(int tempo)
   }
   delay(1000);
 }
+
+void allerRetour2(int tempo)
+{
+  int i = 0;
+
+  while (i <= 7)
+  {
+    digitalWrite(i, HIGH);
+    i += 2;
+    delay(tempo);
+  }
+  while (i <= 11)
+  {
+    digitalWrite(i, HIGH);
+    i++;
+    delay(tempo);
+  }
+  i = 13;
+  while (i <= 21)
+  {
+    digitalWrite(i, HIGH);
+    i += 2;
+    delay(tempo);
+  }
+  //---------------------------------------------//
+  i = 0;
+  while (i <= 7)
+  {
+    digitalWrite(i, LOW);
+    i ++;
+    delay(tempo);
+  }
+  while (i <= 11)
+  {
+    digitalWrite(i, LOW);
+    i++;
+    delay(tempo);
+  }
+  i = 13;
+  while (i <= 21)
+  {
+    digitalWrite(i, LOW);
+    i += 2;
+    delay(tempo);
+  }
+}
+
 void loop()
 {
   if (digitalRead(mode1) == LOW)
   {
-    allerRetour(20);
+    allerRetour2(30);
 
   }
   else if (digitalRead(mode1) == HIGH)
   {
-    constantRouge();
+    constantVert();
   }
 }
