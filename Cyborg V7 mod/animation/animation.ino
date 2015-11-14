@@ -12,7 +12,7 @@ void setup()
   }
 }
 
-void  constantVert(void)
+void  constantVert(void) // Fonction qui laisse le clavier allumer en vert constament
 {
   int i = 0;
   while (i <= 21)
@@ -22,7 +22,7 @@ void  constantVert(void)
   }
 }
 
-void  constantRouge(void)
+void  constantRouge(void)// Fonction qui laisse le clavier allumer en rouge constament
 {
   int i = 1;
   while (i <= 21)
@@ -32,7 +32,7 @@ void  constantRouge(void)
   }
 }
 
-void constantOrange()
+void constantOrange()// Fonction qui laisse le clavier allumer en orange constament
 {
   int i = 0;
   while (i <= 21)
@@ -42,7 +42,7 @@ void constantOrange()
   }
 }
 
-void chenillard(int tempo)
+void chenillard(int tempo) // Animation d'un chenillard simple
 {
   int i = 0;
   while (i <= 21)
