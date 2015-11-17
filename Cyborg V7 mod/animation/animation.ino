@@ -119,12 +119,24 @@ void allerRetour2(int tempo)
   }
 }
 
+void animation3(int tempo)
+{
+  int i = 0;
+
+  while (i <= 21)
+  {
+    digitalWrite(i, HIGH);
+    delay(tempo);
+    digitalWrite(i, LOW);
+    i++;
+  }
+}
+
 void loop()
 {
   if (digitalRead(mode1) == LOW)
   {
-    allerRetour2(30);
-
+    allerRetour2(50);
   }
   else if (digitalRead(mode1) == HIGH)
   {
