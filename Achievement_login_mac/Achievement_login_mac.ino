@@ -8,7 +8,7 @@ void loop() {
   int i = 0;
 
   Keyboard.write("rabougue\n");
-  Keyboard.write("EmVi_8>t");
+  Keyboard.write("/*Mot de passe ici*/");
   delay(1000);
   Keyboard.write("\n");
   delay(2000);
