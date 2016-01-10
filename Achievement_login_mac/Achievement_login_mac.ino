@@ -5,13 +5,13 @@ void setup() {
 
 void  logIn()
 {
-  Keyboard.write("rabougue\n");
-  Keyboard.write("/*Mot de passe*/\n");
+  Keyboard.write("/*Login*/\n");
+  Keyboard.write("/*Password*/\n");
   delay(1000);
   Keyboard.write("\n");
   delay(1000);
   Keyboard.write("\n");
-  delay(10000);
+  delay(90000);
 }
 
 void  logOut(void)
