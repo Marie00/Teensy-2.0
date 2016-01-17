@@ -5,6 +5,7 @@ void setup() {
 
 void  logIn()
 {
+  Mouse.click(MOUSE_LEFT);
   Keyboard.write("/*Login*/\n");
   Keyboard.write("/*Password*/\n");
   delay(1000);
